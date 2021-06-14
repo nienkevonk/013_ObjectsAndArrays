@@ -18,7 +18,7 @@ colors[2] = "rood";
 // console.log(colors);
 // console.log(colors.length);
 // console.log(colors[0]);
-const lastItem = colors[colors.length - 1];
+console.log(colors[colors.length - 1]);
 // console.log(lastItem);
 colors.push('geel');
 // console.log(colors);
@@ -26,7 +26,7 @@ colors.push(5);
 // console.log(colors);
 
 colors.push({ greeting: "hi ik ben een object" });
-// console.log(colors[5]);
+console.log(colors[colors.length - 1].greeting);
 
 const catBreeds = [{
     name: "Abyssinian",
@@ -78,5 +78,6 @@ const catBreeds = [{
 console.log("Kattenras kat 3:", catBreeds[2].name);
 console.log("Energielevel kat 1:", catBreeds[0].energy_level);
 console.log("Eerste temperament kat 2:", catBreeds[1].temperament[0]);
-console.log("Laatste temperament kat 3:", catBreeds[2].temperament[4]);
+const lengthTemperamentsCatThree = catBreeds[2].temperament.length;
+console.log("Laatste temperament kat 3:", catBreeds[2].temperament[lengthTemperamentsCatThree - 1]);
 console.log("Favoriete voedsel kat 3:", catBreeds[2].food.favourite_food);
